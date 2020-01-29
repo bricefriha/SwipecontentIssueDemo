@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SwipecontentIssueDemo.MainPage">
+
+    <StackLayout>
+        <!-- Here's the swipe view I'm talking about -->
+        <SwipeView HorizontalOptions="Center"
+                   VerticalOptions="Center">
+            <!-- Here's the content-->
+            <Frame>
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Orientation="Vertical">
+                    <!-- test on an entry-->
+                    <Entry Placeholder="If you write over this, you're my god"/>
+                    
+                    <!-- Test on a button -->
+                    <Button x:Name="btnTest"
+                            Text="the button"
+                            Clicked="btnTest_Clicked"/>
+
+                </StackLayout>
+            </Frame>
+        </SwipeView>
+
+    </StackLayout>
+
+</ContentPage>
